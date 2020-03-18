@@ -1,4 +1,4 @@
-const sum = (a, b) => a + b;
+const sum = (a, b, ...other) => [a, b, ...others].reduce((total, n) => total + n, 0);
 
 export default sum;
 
